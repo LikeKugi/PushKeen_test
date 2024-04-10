@@ -10,4 +10,11 @@ export default defineConfig({
       { find: '@', replacement: fileURLToPath(new URL('./src', import.meta.url)) },
     ]
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/shared/styles/mixins.scss";',
+      },
+    },
+  },
 });

@@ -1,0 +1,50 @@
+.Card {
+  max-width: 339px;
+  width: 100%;
+  padding-inline: 25px;
+  padding-block: 15px;
+  border-radius: 25px;
+  background-color: var(--color-white-transparent);
+  box-shadow: 0 0 45.9px 0 var(--color-shadow-solid);
+
+  transition: background-color 0.2s ease-in-out;
+
+
+  &:hover {
+    background-color: var(--color-white);
+  }
+
+  &--active {
+    box-shadow: 0 0 45.9px 0 var(--color-shadow-red);
+    animation: boxActiveColor 1s ease-in-out;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 121%;
+    color: var(--color-black);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__content {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 121%;
+    color: var(--color-black);
+  }
+}
+
+@keyframes boxActiveColor {
+  from {
+    box-shadow: 0 0 45.9px 0 var(--color-shadow-solid);
+  }
+
+  to {
+    box-shadow: 0 0 45.9px 0 var(--color-shadow-red);
+  }
+}
+

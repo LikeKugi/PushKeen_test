@@ -1,0 +1,16 @@
+.Grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 60px;
+  place-items: center;
+  place-content: center;
+
+  @include _1024 {
+    gap: 48px;
+  }
+
+  @include _768 {
+    gap: 24px;
+  }
+}
