@@ -4,6 +4,7 @@ import { fileURLToPath } from 'url';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/PushKeen_test/',
   plugins: [react()],
   resolve: {
     alias: [
